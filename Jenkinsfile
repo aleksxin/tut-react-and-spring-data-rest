@@ -2,7 +2,7 @@ pipeline {
     agent {
         dockerfile {
 
-            args '-p 80:8080 -v /root/.m2:/root/.m2'
+            args '-u root:sudo -p 80:8080 -v /root/.m2:/root/.m2'
         }
     }
     stages {
