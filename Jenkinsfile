@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean spring-boot:run -pl basic'
+                sh 'mvn -B -DskipTests clean spring-boot:run -pl conditional'
             }
         }
     }
