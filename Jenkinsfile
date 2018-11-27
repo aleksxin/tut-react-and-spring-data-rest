@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:latest'
+            dockerfile true
             args '-p 80:8080 -v /root/.m2:/root/.m2'
         }
     }
