@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean spring-boot:run -pl events'
+                sh 'mvn -B -DskipTests clean spring-boot:run -pl hypermedia'
             }
         }
     }
